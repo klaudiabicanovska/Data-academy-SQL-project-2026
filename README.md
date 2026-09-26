@@ -29,3 +29,15 @@ Priemerné hodnoty miezd a cien boli zaokrúhlené na 2 desatinné miesta pre le
 
 ### 1.2 Tabuľka  *t_klaudia_bicanovska_project_SQL_secondary_final*
 Druhá tabuľka zobrazuje HDP, gini a obyvateľstvo krajín Európy v porovnateľnom období.
+
+## 2.  Výskumné otázky
+### 2.1 Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
+V sledovanom období rástli každý rok mzdy jedine v odvetviach: Spracovateľský priemysel, Zdravotná a sociálna starostlivosť a  Ostatné činnosti. V ostatných odvetviach mzdy aspoň v jednom roku klesali. 
+### 2.2 Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
+V roku 2006 bolo možné nakúpiť za priemernú mzdu v Českej republike 1 312,98 kg chleba a 1465,73 l mlieka. 
+V roku 2018 bolo možné nakúpiť za priemernú mzdu v Českej republike 1 465,73 kg chleba a 1 669,6 l mlieka. 
+### 2.3 Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)? 
+Najpomalší nárast ceny potravín zaznamenala kategória - cukor krištáľový, ktorý vo väčšej miere klesala. 
+### 2.4 Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
+Počas rokov 2006-2018, nenastala situácia, kedy by medziročný nárast ceny potravín bol vyšší ako rast miezd (viac ako 10 %). 
+### 2.5 Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?
