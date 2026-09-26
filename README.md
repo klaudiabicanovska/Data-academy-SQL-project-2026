@@ -12,7 +12,7 @@ Prvotná tabuľka poskytuje informácie o priemerných mzdách podľa odvetví a
 
 Pred samotným vytvorením tabuľky sme overili niektoré vlastnosti dátových sad:
 
--*Spôsob prepočtu mzdy:* Pre výpočet priemernej mzdy boli použité hodnoty prepočítané na zamestnanca (calculation_code = 200), nie fyzický počet zamestnancov (calculation_code = 100). Dôvodom bolo získať presnejšiu informáciu o hrubej mzde, ktorá odráža reálnu hodnotu odpracovaného času, keďže prepočítaný počet zohľadňuje aj čiastočné úväzky. Rovnako sme podmienkou value_type_code = 5958 zabezpečili, že do výpočtu vstupuje len priemerná hrubá mzda na zamestnanca
+-*Spôsob prepočtu mzdy:* Pre výpočet priemernej mzdy boli použité hodnoty prepočítané na zamestnanca (calculation_code = 200), nie fyzický počet zamestnancov (calculation_code = 100). Dôvodom bolo získať presnejšiu informáciu o hrubej mzde, ktorá odráža reálnu hodnotu odpracovaného času. Rovnako sme podmienkou value_type_code = 5958 zabezpečili, že do výpočtu vstupuje len priemerná hrubá mzda na zamestnanca.
 
 -*Overenie NULL hodnoty v region_code:* Porovnaním počtu záznamov pre jednotlivé kraje sme zistili, že hodnota NULL v stĺpci region_code sa vyskytuje s rovnakou pravidelnosťou ako záznamy pre jednotlivé kraje (najčastejšie 7217 záznamov). Táto zhoda počtu záznamov podporuje záver, že NULL nereprezentuje chýbajúci údaj, ale samostatnú, celorepublikovú hodnotu ceny.
 
@@ -26,3 +26,6 @@ Do tabuľky sme doplnili dva stĺpce, ktoré uľahčujú jej ďalšiu prácu s d
 -*unit* pre zadefinovanie mernej jednotky. 
 
 Priemerné hodnoty miezd a cien boli zaokrúhlené na 2 desatinné miesta pre lepšiu čitateľnosť výstupu.
+
+### 1.2 Tabuľka  *t_klaudia_bicanovska_project_SQL_secondary_final*
+Druhá tabuľka zobrazuje HDP, gini a obyvateľstvo krajín Európy v porovnateľnom období.
