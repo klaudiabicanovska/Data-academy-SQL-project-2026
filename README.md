@@ -1,3 +1,5 @@
+<div align="justify">
+
 # Projekt z SQL 
 
 ## Úvod
@@ -41,3 +43,4 @@ Najpomalší nárast ceny potravín zaznamenala kategória - cukor krištáľov�
 ### 2.4 Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
 Počas rokov 2006-2018, nenastala situácia, kedy by medziročný nárast ceny potravín bol vyšší ako rast miezd (viac ako 10 %). 
 ### 2.5 Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?
+</div>
