@@ -28,8 +28,6 @@ Do tabuľky sme doplnili dva stĺpce, ktoré uľahčujú jej ďalšiu prácu s d
 
 -*unit* pre zadefinovanie mernej jednotky. 
 
-Priemerné hodnoty miezd a cien boli zaokrúhlené na 2 desatinné miesta pre lepšiu čitateľnosť výstupu.
-
 ### 1.2 Tabuľka  *t_klaudia_bicanovska_project_SQL_secondary_final*
 Druhá tabuľka zobrazuje HDP, GINI koeficient a počet obyvateľov krajín Európy (vrátane Českej republiky) v porovnateľnom období. Informácie o Českej republike boli zahrnuté do tabuľky za účelom zodpovedania otázky č.5, ktorá vyžadovala informácie o HDP.
 
