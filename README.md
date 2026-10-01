@@ -3,7 +3,7 @@
 # Projekt z SQL 
 
 ## Úvod
-Projekt z SQL poskytuje informácie o dostupnosti potravín v závislosti od priemerných príjmov v Českej republike za vymedzené časové obdobie. Rovnako sa zaoberá aj vývojom HDP a jeho vplyvom na zmeny v mzdách a cenách v Českej republike. V prvej časti projektu sú vytvorené tabuľky, prostredníctvom ktorých odpovedáme na vopred stanovené výskumné otázky. V druhej časti projektu sú prezentované výsledky stanovených otázok, na základe vytvorených dátových podkladov, ktoré sú súčasťou príloh na githube 
+Projekt z SQL poskytuje informácie o dostupnosti potravín v závislosti od priemerných príjmov v Českej republike za vymedzené časové obdobie. Rovnako sa zaoberá aj vývojom HDP a jeho vplyvom na zmeny v mzdách a cenách v Českej republike. V prvej časti projektu sú vytvorené tabuľky, prostredníctvom ktorých odpovedáme na vopred stanovené výskumné otázky. V druhej časti projektu sú prezentované výsledky stanovených otázok na základe vytvorených dátových podkladov, ktoré sú spolu s použitými SQL skriptmi dostupné v tomto GitHub repozitári.
 
 ## 1.  Vytvorenie tabuliek
 
