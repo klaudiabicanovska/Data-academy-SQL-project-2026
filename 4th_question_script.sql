@@ -1,28 +1,30 @@
 WITH wages AS (
-SELECT
-	YEAR,
-	round ((avg(value) - LAG (avg(value)) OVER (ORDER BY year))/(LAG (avg(value)) OVER (ORDER BY year)) *100,2)AS trend_of_wage
-FROM T_KLAUDIA_BICANOVSKA_PROJECT_SQL_PRIMARY_FINAL TKBPSPF 
-WHERE type = 'mzda'
-GROUP BY YEAR
+    SELECT
+        year,
+        ROUND((AVG(value) - LAG(AVG(value)) OVER (ORDER BY year))
+            / LAG(AVG(value)) OVER (ORDER BY year) * 100, 2) AS trend_of_wage
+    FROM t_klaudia_bicanovska_project_SQL_primary_final
+    WHERE type = 'mzda'
+    GROUP BY year
 ),
 prices AS (
-SELECT
-	YEAR,
-	round((avg(value) - LAG (avg(value)) OVER (ORDER BY year))/(LAG (avg(value)) OVER (ORDER BY year))*100,2)AS trend_of_prices
-FROM T_KLAUDIA_BICANOVSKA_PROJECT_SQL_PRIMARY_FINAL TKBPSPF 
-WHERE type = 'cena'
-GROUP BY year
+    SELECT
+        year,
+        ROUND((AVG(value) - LAG(AVG(value)) OVER (ORDER BY year))
+            / LAG(AVG(value)) OVER (ORDER BY year) * 100, 2) AS trend_of_prices
+    FROM t_klaudia_bicanovska_project_SQL_primary_final
+    WHERE type = 'cena'
+    GROUP BY year
 )
 SELECT
-	prices."year",
-	TREND_OF_PRICEs,
-	trend_of_wage,
-	CASE 
-		WHEN (TREND_OF_PRICEs - trend_of_wage)>10 THEN 'áno'
-		ELSE 'nie'
-	END AS RESULT 
-FROM wages 
-JOIN prices 
-ON wages.YEAR = prices.YEAR
+    prices.year,
+    trend_of_prices,
+    trend_of_wage,
+    CASE
+        WHEN (trend_of_prices - trend_of_wage) > 10 THEN 'áno'
+        ELSE 'nie'
+    END AS result
+FROM wages
+JOIN prices
+    ON wages.year = prices.year
 ORDER BY year;
