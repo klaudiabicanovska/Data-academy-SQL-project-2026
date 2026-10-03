@@ -1,19 +1,4 @@
---- Pomocné scripty.
-SELECT
-	region_code,
-	count(*)
-FROM czechia_price
-GROUP BY region_code;
 
-SELECT 
-	count(value),
-	CP.CALCULATION_CODE,
-	count(CP.CALCULATION_CODE )
-FROM CZECHIA_PAYROLL CP 
-WHERE CP.VALUE_TYPE_CODE = 5958
-GROUP BY CALCULATION_CODE;
-
---- Vytvorenie tabuľky.
 CREATE TABLE t_klaudia_bicanovska_project_SQL_primary_final AS 
 WITH years as(
 SELECT 
@@ -51,26 +36,7 @@ WHERE CP.REGION_CODE IS NULL
 	AND date_part('year', date_from) IN (select*FROM years)
 GROUP BY date_part('year', date_from), cpc.name, cpc.PRICE_UNIT ;
 
---- Overenie dát.
-SELECT
-	TYPE,
-	count(*) AS pocet
-FROM t_klaudia_bicanovska_project_SQL_primary_final 
-GROUP BY "type" ;
 
-SELECT
-	item,
-	count(year)
-FROM t_klaudia_bicanovska_project_SQL_primary_final
-WHERE TYPE = 'cena'
-GROUP BY item;
-
-SELECT
-	YEAR
-FROM t_klaudia_bicanovska_project_SQL_primary_final
-WHERE TYPE = 'cena'
-		AND item = 'Jakostní víno bílé'
-ORDER BY year;
 
 
 
